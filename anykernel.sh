@@ -6,7 +6,7 @@
 properties() { '
 kernel.string=Google Pixel 7 Pro with KSU-NEXT/SUSFS by EduardoA3677 @ xda-developers
 do.devicecheck=0
-do.modules=1
+do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
@@ -16,8 +16,8 @@ device.name3=panther
 device.name4=lynx
 device.name5=
 supported.versions=15
-supported.patchlevels=2023-12 - 2025-04
-supported.vendorpatchlevels=2023-12 - 2025-04
+supported.patchlevels=2024-12 - 2025-06
+supported.vendorpatchlevels=2024-12 - 2025-06
 '; } # end properties
 
 ### AnyKernel install
@@ -32,6 +32,7 @@ BLOCK=boot;
 IS_SLOT_DEVICE=1;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
+NO_MAGISK_CHECK=1;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh;
